@@ -187,13 +187,13 @@
       const weekday = weekdays[now.getDay()];
       const gameTitle = "2A-2[을 줄 알다]聽寫測驗";
 
-      const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSd-Zd-yo_CYumklAb0uQ7gbFK3wKLakvi1-xJw1R7K5uzkpcQ/formResponse";
+      const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSezBGl7_a6tIVWAcsfUyzndQw6YvMuRmys8_1PUs1svB2olcA/formResponse";
       const formData = new FormData();
-      formData.append("entry.1141644943", nickname);
-      formData.append("entry.1968231757", score);
-      formData.append("entry.483952061", time);
-      formData.append("entry.1985980257", weekday);
-      formData.append("entry.1128191043", gameTitle);
+      formData.append("entry.574219109", nickname);
+      formData.append("entry.1532308402", score);
+      formData.append("entry.2020348842", time);
+      formData.append("entry.945769621", weekday);
+      formData.append("entry.344551506", gameTitle);
 
       fetch(formURL, { method:"POST", mode:"no-cors", body:formData })
         .then(() => alert("已提交成績，感謝作答！"));
