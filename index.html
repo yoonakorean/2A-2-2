@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2A-2[을 줄 알다]聽寫測驗</title>
   <style>
     body {
@@ -67,6 +68,7 @@
   <div id="question-number">第 1 題 / 共 10 題</div>
   <audio id="audio" controls></audio><br>
   <input type="text" id="answer" placeholder="請輸入聽到的句子"><br>
+  <div class="note">&nbsp;</div> <!-- 空一行 -->
   <div class="note" id="hint">請注意空格與標點符號</div>
   <button id="check-btn" disabled>確認</button>
   <div id="result"></div>
@@ -78,6 +80,7 @@
   <div id="nickname-section" class="hidden">
     <div id="completion-title">測驗完成</div>
     <input type="text" id="nickname" placeholder="請輸入姓名＋生日( 範例：王小明0828 )"><br>
+    <div class="note">&nbsp;</div> <!-- 空一行 -->
     <div class="note">姓名＋生日 範例：王小明0828</div>
     <div class="note">請回傳合格成績</div>
     <button id="submit-btn" disabled>提交成績</button>
